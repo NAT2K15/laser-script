@@ -13,8 +13,6 @@ RegisterCommand('+taser_toggle', function()
 				enabled = true
 				while enabled do 
 					timer_opti = 1000
-					local camview = GetFollowPedCamViewMode()
-					local crouch = GetPedStealthMovement(ped)
 					if IsPlayerFreeAiming(PlayerId()) then
 						timer_opti = 0
 						local weapon = GetCurrentPedWeaponEntityIndex(ped)
